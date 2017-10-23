@@ -1,0 +1,11 @@
+12:16:01 **** Incremental Build of configuration Debug for project WindowLifter ****
+make -j4 all 
+Building file: ../Sources/main.c
+Executing target #12 ../Sources/main.c
+Invoking: Standard S32DS C Compiler
+arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+../Sources/main.c:2:22: fatal error: portinit.h: No such file or directory
+ #include "portinit.h"
+                      ^
+compilation terminated.
+make: *** [Sources/subdir.mk:35: Sources/main.o] Error 1
