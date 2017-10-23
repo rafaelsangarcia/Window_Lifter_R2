@@ -1,14 +1,24 @@
-12:16:01 **** Incremental Build of configuration Debug for project WindowLifter ****
+12:30:52 **** Incremental Build of configuration Debug_RAM for project WindowLifter ****
 make -j4 all 
 Building file: ../Sources/main.c
 Executing target #12 ../Sources/main.c
 Invoking: Standard S32DS C Compiler
 arm-none-eabi-gcc "@Sources/main.args" -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
-../Sources/main.c:2:22: fatal error: portinit.h: No such file or directory
- #include "portinit.h"
-                      ^
-compilation terminated.
-make: *** [Sources/subdir.mk:35: Sources/main.o] Error 1
+Finished building: ../Sources/main.c
+ 
+Building target: WindowLifter.elf
+Executing target #14 WindowLifter.elf
+Invoking: Standard S32DS C Linker
+arm-none-eabi-gcc -o "WindowLifter.elf" "@WindowLifter.args"   
+Finished building target: WindowLifter.elf
+ 
+Executing target #15 WindowLifter.siz
+Invoking: Standard S32DS Print Size
+arm-none-eabi-size --format=berkeley  WindowLifter.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1568	      0	   2048	   3616	    e20	WindowLifter.elf
+Finished building: WindowLifter.siz
+ 
 
-12:16:01 Build Finished (took 488ms)
+12:30:54 Build Finished (took 1s.269ms)
 
